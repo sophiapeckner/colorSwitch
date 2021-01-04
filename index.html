@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class="container">
+
+      <section id="game">
+        <h1>Color Switch</h1>
+        <p id="levelDisplay">
+          Level: <span id="myLevel"><span>
+        </p>
+        <canvas id="myCanvas" width="400" height="400" style="border: 1px solid #d3d3d3;" onclick="getCoords(canvas, event)">
+          Your browser does not support the HTML5 canvas tag.
+        </canvas>
+      </section>
+
+      <section>
+        <h1>Instructions</h1>
+        <ol id="instructions">
+          <li>Click on two different colored sqaures to swap their color</li>
+          <li>Keep doing this until all columns are the same color</li>
+        </ol>
+      </section>
+
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
